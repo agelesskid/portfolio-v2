@@ -8,7 +8,9 @@ export default function Header() {
                     <li><a href="#about">About</a></li>
                     <li><a href="#work">Work</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li className="help"><a href="https://u24.gov.ua/">Support Ukraine</a></li>
+                    <li className="help">
+                        <a href="https://u24.gov.ua/">Support Ukraine</a>
+                    </li>
                 </ul>
             </nav>
         </header>
