@@ -1,7 +1,10 @@
 :root {
-  --dark-grey: #202020;
-  --light-grey: #444444;
+  --background-color: #202020;
+  --dark-grey: #454555;
+  --light-grey: #AAAABC;
   --blue: #006eff;
+  --dark-yellow: #957200;
+  --light-yellow: #D2A600;
 }
 
 * {
@@ -11,8 +14,11 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-a {
+h1, h2, a, p {
   color: #fff;
+}
+
+a {
   text-decoration: none;
 }
 
@@ -21,7 +27,7 @@ li {
 }
 
 body {
-  background-color: var(--dark-grey);
+  background-color: var(--background-color);
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -32,15 +38,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 1.25em;
   -webkit-box-shadow: 0px 2px 10px -5px rgba(21,6,5,1);
   -moz-box-shadow: 0px 2px 10px -5px rgba(21,6,5,1);
   box-shadow: 0px 2px 10px -5px rgba(21,6,5,1);
 }
 
-.logo {
+h2.logo {
   font-family: 'Inconsolata', monospace;
-  color: #ffffff;
   font-weight: 400;
 }
 
@@ -53,10 +58,38 @@ header > nav {
 
 header > nav > ul {
   display: flex;
-  gap: 18px;
+  gap: 1.125em;
 }
 
 header > nav > ul > li {
   font-weight: 500;
+}
+
+#home {
+  min-height: 450px;
+  background-color: var(--dark-grey);
+  background: url(/public/images/laptop.jpg) center center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1.heading-primary {
+  text-transform: uppercase;
+
+  font-size: 2.75rem;
+}
+
+h2.heading-secondary {
+  padding: .025em .25em;
+  background-color: var(--light-yellow);
+  border-radius: 2px;
+
+  font-size: 1.75rem;
+}
+
+.heading-shadow {
+  text-shadow: 0px 1px 3px var(--dark-grey);
 }
 
