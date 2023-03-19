@@ -9,13 +9,12 @@ export default function About() {
                     I'm a web developer and currently I live in Bremen, Germany.
                 </p>
                 <p>
-                    I did study for Design Engineer a couple of years ago, but then I decided to change university to study Web Development.
+                    I did study for Design Engineering a couple of years ago, but then I decided to change university to study Web Development.
                     Afterwards I realised that I'm in love with <b>Front-End</b> Web Development!
                     Unfotunately, I was forced to leave university after war had started. 
                 </p>
                 <p>
-                    
-                    A little bit lately i decided to enroll for the Scrimba Front-End Development Path.
+                    A little bit lately i decided to enroll to the Scrimba Front-End Development Path.
                     Currently my stack includes React JS, Vanilla JS, HTML and CSS.
                     Also, I know how to work with Figma.
                 </p>
