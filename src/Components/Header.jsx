@@ -1,5 +1,4 @@
 import { useState } from "react"
-import { Link } from "react-router-dom"
 import windowTracker from "../utils/windowTracker"
 
 export default function Header() {
@@ -23,12 +22,12 @@ export default function Header() {
         <nav style={styles}>
             {windowWidth < 700 && <i className="fa-solid fa-xmark fa-2x fa-inverse" onClick={closeNav}></i>}
             <ul>
-                <li><Link to="#home">Home</Link></li>
-                <li><Link to="#about">About</Link></li>
-                <li><Link to="#work">Work</Link></li>
-                <li><Link to="#contact">Contact</Link></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li className="help">
-                    <Link to="https://u24.gov.ua/">Support Ukraine</Link>
+                    <a href="https://u24.gov.ua/">Support Ukraine</a>
                 </li>
             </ul>
         </nav>
