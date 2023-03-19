@@ -1,7 +1,9 @@
+/* General */
+
 :root {
   --background-color: #202020;
   --dark-grey: #454555;
-  --light-grey: #AAAABC;
+  --light-grey: #aaaabc;
   --blue: #006eff;
   --dark-yellow: #957200;
   --light-yellow: #D2A600;
@@ -25,6 +27,8 @@ a {
 li {
   list-style: none;
 }
+
+/* Layout + Typography */
 
 body {
   background-color: var(--background-color);
@@ -50,46 +54,108 @@ h2.logo {
 }
 
 header > nav {
-  width: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -250px;
+  text-align: end;
+  background-color: var(--light-grey);
+  padding: 1.25em;
+  transition: .3s;
 }
 
-header > nav > ul {
-  display: flex;
-  gap: 1.125em;
+header > nav > i {
+  margin-bottom: .5em;
 }
 
 header > nav > ul > li {
+  margin-bottom: 1em;
+
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
 #home {
   min-height: 450px;
   background-color: var(--dark-grey);
-  background: url(/public/images/laptop.jpg) center center / cover no-repeat;
+  background: url(/images/laptop.jpg) center center / cover no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 1em;
 }
 
 h1.heading-primary {
-  text-transform: uppercase;
+  text-align: center;
 
-  font-size: 2.75rem;
+  font-size: 1.75rem;
 }
 
 h2.heading-secondary {
   padding: .025em .25em;
   background-color: var(--light-yellow);
   border-radius: 2px;
+  text-align: center;
 
-  font-size: 1.75rem;
+  font-size: 1.2rem;
 }
+
+/* Utility */
 
 .heading-shadow {
   text-shadow: 0px 1px 3px var(--dark-grey);
+}
+
+/* Media */
+
+@media (min-width: 700px) {
+  header > nav {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: static;
+    background-color: transparent;
+    padding: 0;
+    transition: 0;
+  }
+  
+  header > nav > ul {
+    display: flex;
+    gap: 1.125em;
+  }
+  
+  header > nav > ul > li {
+    margin-bottom: 0;
+
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 800px) {
+
+  haeder > nav {
+    width: 40%;
+  }
+
+  h1.heading-primary {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  h2.heading-secondary {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1030px) {
+  h1.heading-primary {
+    font-size: 2.75rem;
+  }
+
+  h2.heading-secondary {
+    font-size: 1.75rem;
+  }
 }
 
