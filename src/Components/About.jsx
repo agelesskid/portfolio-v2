@@ -10,12 +10,12 @@ export default function About() {
                 </p>
                 <p>
                     I did study for Design Engineering a couple of years ago, but then I decided to change university to study Web Development.
-                    Afterwards I realised that I'm in love with <b>Front-End</b> Web Development!
-                    Unfotunately, I was forced to leave university after war had started. 
+                    Afterwards, I realised that I'm in love with <b>Front-End</b> Web Development!
+                    Unfortunately, I was forced to leave university after the war had started. 
                 </p>
                 <p>
-                    A little bit lately i decided to enroll to the Scrimba Front-End Development Path.
-                    Currently my stack includes React JS, Vanilla JS, HTML and CSS.
+                    Recently I've decided to enroll in the Scrimba Front-End Development Path.
+                    Currently, my stack includes React JS, Vanilla JS, HTML and CSS.
                     Also, I know how to work with Figma.
                 </p>
                 <p>
