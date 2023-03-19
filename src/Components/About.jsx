@@ -9,7 +9,7 @@ export default function About() {
                     I'm a web developer and currently I live in Bremen, Germany.
                 </p>
                 <p>
-                    I did study for Design Engineer couple years ago, but then I decided to change university to study Web Development.
+                    I did study for Design Engineer a couple of years ago, but then I decided to change university to study Web Development.
                     Afterwards I realised that I'm in love with <b>Front-End</b> Web Development!
                     Unfotunately, I was forced to leave university after war had started. 
                 </p>
