@@ -102,6 +102,7 @@ div.section-secondary-desc-wrapper > p {
 
 h1.home-main-heading {
   text-align: center;
+  margin-bottom: .05em;
 
   font-size: 1.75rem;
 }
