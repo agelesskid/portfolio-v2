@@ -149,10 +149,12 @@ li.project, li.project > img {
 }
 
 li.project {
+  position: relative;
   width: 32%;
   min-width: 80%;
   overflow: hidden;
   cursor: pointer;
+  transform: rotate(0); /* Border radius on transform bug fix https://stackoverflow.com/a/56314016/21418256 */
 }
 
 li.project > img {
@@ -161,12 +163,11 @@ li.project > img {
   height: 250px;
   object-fit: cover;
   transition: .5s;
-  background-color: var(--light-grey);
 }
 
 li.project > img:hover {
-  transform: scale(1.2);
   opacity: .5;
+  transform: scale(1.2);
 }
 
 /* Utility */
