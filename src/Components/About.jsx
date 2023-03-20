@@ -6,17 +6,13 @@ export default function About() {
            
             <div className="about-secondary-desc-wrapper section-secondary-desc-wrapper">
                 <p>
-                    I'm a web developer and currently I live in Bremen, Germany.
-                </p>
-                <p>
                     I did study for Design Engineering a couple of years ago, but then I decided to change university to study Web Development.
-                    Afterwards, I realised that I'm in love with <b>Front-End</b> Web Development!
+                    Afterwards, I realised that I'm in love with Front-End Web Development!
                     Unfortunately, I was forced to leave university after the war had started. 
-                </p>
-                <p>
                     Recently I've decided to enroll in the Scrimba Front-End Development Path.
-                    Currently, my stack includes React JS, Vanilla JS, HTML and CSS.
+                    My stack includes React JS, Vanilla JS, HTML and CSS.
                     Also, I know how to work with Figma.
+                    Currently, I live in Bremen, Germany.
                 </p>
                 <p>
                     Excluding education, I love to drink a lot of tea, and I have a cat :)
