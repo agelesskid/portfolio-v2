@@ -65,6 +65,7 @@ header > nav {
   background-color: var(--light-grey);
   transition: .3s;
   padding: 1.25em;
+  z-index: 1;
 }
 
 header > nav > i {
