@@ -154,7 +154,6 @@ li.project {
   min-width: 80%;
   overflow: hidden;
   cursor: pointer;
-  transform: rotate(0);
 }
 
 li.project > img {
