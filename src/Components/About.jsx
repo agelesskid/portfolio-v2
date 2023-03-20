@@ -12,6 +12,8 @@ export default function About() {
                     Recently I've decided to enroll in the Scrimba Front-End Development Path.
                     My stack includes React JS, Vanilla JS, HTML and CSS.
                     Also, I know how to work with Figma.
+                </p>
+                <p>
                     Currently, I live in Bremen, Germany.
                 </p>
                 <p>
