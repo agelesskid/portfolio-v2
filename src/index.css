@@ -153,8 +153,7 @@ li.project {
   min-width: 80%;
   overflow: hidden;
   cursor: pointer;
-  transform: rotate(0); /* transform on border radius bug fix https://stackoverflow.com/a/56314016/21418256 */
-  transition: .001s linear;
+  opacity: 1; /* transform on border radius bug fix https://stackoverflow.com/a/56314016/21418256 */
 }
 
 li.project > img {
