@@ -149,6 +149,7 @@ li.project, li.project > img {
 }
 
 li.project {
+  position: relative;
   width: 32%;
   min-width: 80%;
   overflow: hidden;
