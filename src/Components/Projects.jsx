@@ -1,19 +1,16 @@
 import { useContext } from "react"
 import { Context } from "../Context"
 import Project from "./Project"
-import { nanoid } from "nanoid"
 
 export default function Projects() {
 
     const {projectsArr} = useContext(Context)
 
     const projectsEl = projectsArr.map(project=>{
-        const id = nanoid()
         return (
-            <Project key={id} data={project}/>
+            <Project key={project.id} data={project}/>
         )
     })
-
 
     return (
         <section id="projects">
