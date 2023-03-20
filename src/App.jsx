@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom"
 import Main from "./Pages/Main"
-import Project from "./Pages/Project"
+import Project from "./Pages/ProjectPage"
 
 export default function App() {
   return (
