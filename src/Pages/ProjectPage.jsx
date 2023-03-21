@@ -38,7 +38,7 @@ export default function ProjectPage() {
                                     <Link to={live_url}><FontAwesomeIcon icon={faLightbulb} className="fa-lg"/>Live</Link>
                                 </div>
                             </div>
-                            <div className="section-item">
+                            <div className="section-item languages-wrapper">
                                 <h3 className="section-languages-heading section-secondary-heading">Languages:</h3>
                                 <ul className="section-languages-list">
                                     {languagesEl}

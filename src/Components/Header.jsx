@@ -51,7 +51,7 @@ export default function Header() {
     return (
         <header>
             <h2 className="logo">{"<Ageless />"}</h2>
-            {windowWidth < 700 && <FontAwesomeIcon icon={faBars} className="fa-2x fa-inverse" onClick={closeNav}/>}
+            {windowWidth < 700 && <FontAwesomeIcon icon={faBars} className="fa-2x fa-inverse" onClick={openNav}/>}
             {navBar}
         </header>
     )

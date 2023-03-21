@@ -68,7 +68,7 @@ header > nav {
   z-index: 3;
 }
 
-header > nav > i {
+header > nav > svg {
   margin-bottom: .5em;
 }
 
@@ -83,6 +83,10 @@ section {
   margin-bottom: .625em;
 }
 
+.page-secondary-heading {
+  font-size: .8rem;
+}
+
 h2.section-main-heading {
   font-size: 1.5rem;
   margin-bottom: .25em;
@@ -93,16 +97,6 @@ h3.section-secondary-heading {
 
   font-weight: 500;
   font-size: 1.3rem;
-}
-
-.section-items-wrapper {
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.overview-wrapper {
-  width: 100%;
 }
 
 p.section-main-desc {
@@ -222,8 +216,11 @@ h1.project-main-heading {
   padding: 0 1em;
 }
 
-h3.section-links-heading {
-  margin-bottom: .1em;
+.section-items-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .5rem;
 }
 
 div.links-wrapper {
@@ -255,7 +252,7 @@ div.links-wrapper > a > svg {
 
 #project-about p.section-main-desc {
   margin-bottom: .5em;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 
@@ -336,6 +333,18 @@ div.links-wrapper > a > svg {
   }
 }
 
+/* Media ProjectPage */
+
+@media (min-width: 850px) {
+  .overview-wrapper {
+    width: 80%;
+  }
+  
+  .languages-wrapper {
+    width: 19%;
+  }
+}
+
 /* Media Fonts */
 
 @media (min-width: 450px) {
@@ -351,6 +360,11 @@ div.links-wrapper > a > svg {
   p.section-main-desc {
     font-size: 1.4rem;
   }
+
+  #project-about p.section-main-desc {
+    font-size: 1.2rem;
+  }
+
 }
 
 @media (min-width: 700px) {
