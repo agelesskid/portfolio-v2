@@ -8,7 +8,7 @@ export default function Projects() {
 
     const projectsEl = projectsArr.map(project=>{
         return (
-            <Project key={project.id} data={project}/>
+            <Project key={project.key} data={project}/>
         )
     })
 

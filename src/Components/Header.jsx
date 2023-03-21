@@ -1,10 +1,13 @@
 import { useState } from "react"
 import { Link, useLocation } from "react-router-dom"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faXmark, faBars } from "@fortawesome/free-solid-svg-icons"
 import windowTracker from "../utils/windowTracker"
 
 export default function Header() {
 
     const [navPosition, setNavPosition] = useState('-250px')
+    const location = useLocation()
     let windowWidth = windowTracker()
 
     function openNav() {
@@ -20,7 +23,7 @@ export default function Header() {
     }
 
     const navBarList = (
-        useLocation().pathname === '/'
+        location.pathname === '/'
             ? (
                 <ul>
                     <li><Link to="/#home" className="nav-link" onClick={windowWidth < 700 ? closeNav : undefined}>Home</Link></li>
@@ -40,7 +43,7 @@ export default function Header() {
 
     const navBar = (
         <nav style={styles}>
-            {windowWidth < 700 && <i className="fa-solid fa-xmark fa-2x fa-inverse" onClick={closeNav}></i>}
+            {windowWidth < 700 && <FontAwesomeIcon icon={faXmark} className="fa-2x fa-inverse" onClick={closeNav}/>}
             {navBarList}
         </nav>
     )
@@ -48,7 +51,7 @@ export default function Header() {
     return (
         <header>
             <h2 className="logo">{"<Ageless />"}</h2>
-            {windowWidth < 700 && <i className="fa-solid fa-bars fa-2x fa-inverse" onClick={openNav}></i>}
+            {windowWidth < 700 && <FontAwesomeIcon icon={faBars} className="fa-2x fa-inverse" onClick={openNav}/>}
             {navBar}
         </header>
     )

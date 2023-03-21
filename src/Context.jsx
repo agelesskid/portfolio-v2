@@ -8,8 +8,9 @@ function ContextProvider(props){
 
     useEffect(()=>{
         setProjectsArr(projects_data)
-        setProjectsArr(prevArr=>prevArr.map(project=>({
-            id:nanoid(),
+        setProjectsArr(prevArr=>prevArr.map((project, index)=>({
+            key:nanoid(),
+            id: index,
             ...project,
         })))
     }, [])
