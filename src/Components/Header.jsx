@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link, useLocation } from "react-router-dom"
 import windowTracker from "../utils/windowTracker"
 
 export default function Header() {
@@ -18,24 +19,37 @@ export default function Header() {
         right: navPosition
     }
 
-    const navBar = (
-        <nav style={styles}>
-            {windowWidth < 700 && <i className="fa-solid fa-xmark fa-2x fa-inverse" onClick={closeNav}></i>}
+    const navBarList = useLocation().pathname === '/'
+        ? (
             <ul>
-                <li><a href="#home" className="nav-link" onClick={windowWidth < 700 ? closeNav : undefined}>Home</a></li>
-                <li><a href="#about" className="nav-link" onClick={windowWidth < 700 ? closeNav : undefined}>About</a></li>
-                <li><a href="#projects" className="nav-link" onClick={windowWidth < 700 ? closeNav : undefined}>Projects</a></li>
-                <li><a href="#contact" className="nav-link" onClick={windowWidth < 700 ? closeNav : undefined}>Contact</a></li>
-                <li><a href="https://u24.gov.ua/">Support Ukraine</a></li>
+                <li><Link to="/#home" className="nav-link" onClick={windowWidth < 700 ? closeNav : undefined}>Home</Link></li>
+                <li><Link to="/#about" className="nav-link" onClick={windowWidth < 700 ? closeNav : undefined}>About</Link></li>
+                <li><Link to="/#projects" className="nav-link" onClick={windowWidth < 700 ? closeNav : undefined}>Projects</Link></li>
+                <li><Link to="/#contact" className="nav-link" onClick={windowWidth < 700 ? closeNav : undefined}>Contact</Link></li>
+                <li><Link to="https://u24.gov.ua/">Support Ukraine</Link></li>
             </ul>
-        </nav>
-    )
+        ) 
+        : (
+            <ul>
+                <li><Link to="/" className="nav-link" onClick={windowWidth < 700 ? closeNav : undefined}>Home</Link></li>
+                <li><Link to="https://u24.gov.ua/">Support Ukraine</Link></li>
+            </ul>
+        )
+
+    function NavBar(){
+        return (
+            <nav style={styles}>
+                {windowWidth < 700 && <i className="fa-solid fa-xmark fa-2x fa-inverse" onClick={closeNav}></i>}
+                {navBarList}
+            </nav>
+        )
+    } 
 
     return (
         <header>
             <h2 className="logo">{"<Ageless />"}</h2>
             {windowWidth < 700 && <i className="fa-solid fa-bars fa-2x fa-inverse" onClick={openNav}></i>}
-            {navBar}
+            <NavBar />
         </header>
     )
 }
