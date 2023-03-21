@@ -80,12 +80,29 @@ header > nav > ul > li {
 }
 
 section {
-  margin-bottom: 2em;
+  margin-bottom: .625em;
 }
 
 h2.section-main-heading {
   font-size: 1.5rem;
   margin-bottom: .25em;
+}
+
+h3.section-secondary-heading {
+  margin-bottom: .48em;
+
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.section-items-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.overview-wrapper {
+  width: 100%;
 }
 
 p.section-main-desc {
@@ -123,7 +140,7 @@ h2.about-main-heading {
 p.about-main-desc {
   background-color: var(--main-highlight-color);
   padding: .1em .5em;
-  margin-bottom: .35em;
+  margin-bottom: .4168em;
 }
 
 div.about-secondary-desc-wrapper {
@@ -205,6 +222,10 @@ h1.project-main-heading {
   padding: 0 1em;
 }
 
+h3.section-links-heading {
+  margin-bottom: .1em;
+}
+
 div.links-wrapper {
   display: flex;
 }
@@ -213,7 +234,6 @@ div.links-wrapper > a {
   transition: .1s;
   display: block;
   border-radius: .5rem;
-  padding: .5em 1em;
   margin-right: 1em;
   color: var(--main-highlight-color);
   line-height: 1;
@@ -221,9 +241,12 @@ div.links-wrapper > a {
   font-weight: 500;
 }
 
-div.links-wrapper > a:hover {
+div.links-wrapper > a:hover, div.links-wrapper > a:focus {
   color: var(--main-light-color);
-  background-color: var(--main-dark-color);
+}
+
+div.links-wrapper > a:focus {
+  outline: none;
 }
 
 div.links-wrapper > a > svg {
@@ -233,14 +256,7 @@ div.links-wrapper > a > svg {
 #project-about p.section-main-desc {
   margin-bottom: .5em;
   font-size: 1.2rem;
-}
-
-h2.section-languages-heading {
-  margin-bottom: .5em;
-
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 #project-about ul {

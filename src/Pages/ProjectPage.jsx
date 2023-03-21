@@ -29,14 +29,21 @@ export default function ProjectPage() {
                         <h2 className="project-secondary-heading page-secondary-heading heading-shadow">{short_desc}</h2>
                     </section>
                     <section id="project-about">
-                    <h2 className="section-languages-heading">Languages:</h2>
-                        <ul className="section-languages-list">
-                            {languagesEl}
-                        </ul>
-                        <p className="section-main-desc">{full_desc}</p>
-                        <div className="links-wrapper">
-                            <Link to={github_url}><FontAwesomeIcon icon={faGithub} className="fa-lg"/>GitHub</Link>
-                            <Link to={live_url}><FontAwesomeIcon icon={faLightbulb} className="fa-lg"/>Live</Link>
+                        <div className="section-items-wrapper">
+                            <div className="section-item overview-wrapper">
+                                <h3 className="section-overview-heading section-secondary-heading">Project overview:</h3>
+                                <p className="section-main-desc">{full_desc}</p>
+                                <div className="links-wrapper">
+                                    <Link to={github_url}><FontAwesomeIcon icon={faGithub} className="fa-lg"/>GitHub</Link>
+                                    <Link to={live_url}><FontAwesomeIcon icon={faLightbulb} className="fa-lg"/>Live</Link>
+                                </div>
+                            </div>
+                            <div className="section-item">
+                                <h3 className="section-languages-heading section-secondary-heading">Languages:</h3>
+                                <ul className="section-languages-list">
+                                    {languagesEl}
+                                </ul>
+                            </div>
                         </div>
                     </section>
                 </>

@@ -42,7 +42,7 @@ const projects_data = [
     {
         name: "quizzical",
         short_desc: "A Quiz app, which provides you an opportunity to play a quiz.",
-        full_desc: "This is a solo project from the Scrimba course - trivia app, called quizzical. It pulls trivia questions from a database and displays it as a short quiz. Then user can choose the answers and check them. Technologies: conditinal rendering, hooks, components, API, packages.",
+        full_desc: "This is a solo project from the Scrimba course - trivia app, called quizzical. It pulls trivia questions from a database and displays it as a short quiz. Then user can choose the answers and check them. Technologies used: conditinal rendering, hooks, components, API, packages.",
         img: "/images/quizzical.png",
         gif: "/gifs/quizzical.gif",
         languages: ["CSS","HTML","React JS", "Vanilla JS"],
