@@ -12,7 +12,7 @@ const projects_data = [
     {
         name: "learning-journal",
         short_desc: "A landing page.",
-        full_desc: "This is a solo project from the Scrimba course - landing page with a responsive desing. Site has 3 pages: home page, featured post page and about me page.",
+        full_desc: "This is a solo project from the Scrimba course - a landing page with a responsive design. The site has 3 pages: a home page, a featured post page and an about me page.",
         img: "/images/learning-journal.png",
         gif: "/gifs/learning-journal.gif",
         languages: ["CSS","HTML","Vanilla JS"],
@@ -22,7 +22,7 @@ const projects_data = [
     {
         name: "tenzies",
         short_desc: "Just a tenzies game!",
-        full_desc: "Simple dice game, which is usually better suited for younger children. In this project I used React hooks, conditional rendering, nanoid and react-confetti packages.",
+        full_desc: "The simple dice game, which is usually better suited for younger children. In this project I used React hooks, conditional rendering, nanoid and react-confetti packages.",
         img: "/images/tenzies.png",
         gif: "/gifs/tenzies.gif",
         languages: ["CSS","HTML","React JS", "Vanilla JS"],
@@ -32,7 +32,7 @@ const projects_data = [
     {
         name: "pic-some",
         short_desc: "The capstone project of the Scrimba course.",
-        full_desc: "An app, which uses all main React features I've learnt on Scrimba Front-End Developer Path. The idea of this site is letting users to buy some pictures. They can add them to the cart or favorite them by clicking buttons on the pictures. Technologies used: react-router, React hooks, custom hooks, Context and prop-types.",
+        full_desc: "An app, which uses all the main React features I've learned on Scrimba Front-End Developer Path. The idea of this site is letting users buy some pictures. They can add them to the cart or favorite them by clicking buttons on the pictures. Technologies used: react-router, React hooks, custom hooks, Context and prop-types.",
         img: "/images/pic-some.png",
         gif: "/gifs/pic-some.gif",
         languages: ["CSS","HTML","React JS", "Vanilla JS"],
@@ -42,7 +42,7 @@ const projects_data = [
     {
         name: "quizzical",
         short_desc: "A Quiz app, which provides you an opportunity to play a quiz.",
-        full_desc: "This is a solo project from the Scrimba course - trivia app, called quizzical. It pulls trivia questions from a database and displays it as a short quiz. Then user can choose the answers and check them. Technologies used: conditinal rendering, hooks, components, API, packages.",
+        full_desc: "This is a solo project from the Scrimba course - a trivia app, called quizzical. It pulls trivia questions from a database and displays those as a short quiz. Then, the user can choose the answers and check them. Technologies used: conditinal rendering, hooks, components, API, packages.",
         img: "/images/quizzical.png",
         gif: "/gifs/quizzical.gif",
         languages: ["CSS","HTML","React JS", "Vanilla JS"],
