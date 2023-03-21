@@ -83,8 +83,8 @@ section {
   margin-bottom: .625em;
 }
 
-.page-secondary-heading {
-  font-size: .8rem;
+h2.page-secondary-heading {
+  font-size: 1rem;
 }
 
 h2.section-main-heading {
@@ -216,7 +216,7 @@ h1.project-main-heading {
   padding: 0 1em;
 }
 
-.section-items-wrapper {
+div.section-items-wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -336,11 +336,11 @@ div.links-wrapper > a > svg {
 /* Media ProjectPage */
 
 @media (min-width: 850px) {
-  .overview-wrapper {
+  div.overview-wrapper {
     width: 80%;
   }
   
-  .languages-wrapper {
+  div.languages-wrapper {
     width: 19%;
   }
 }
@@ -385,6 +385,10 @@ div.links-wrapper > a > svg {
 @media (min-width: 1000px) {
   h1.page-main-heading {
     font-size: 4rem;
+  }
+
+  h2.page-secondary-heading {
+    font-size: 1.2rem;
   }
 
   h2.section-main-heading {
