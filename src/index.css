@@ -2,9 +2,9 @@
 
 :root {
   --background-color: #202020;
-  --dark-grey: #454555;
-  --light-grey: #aaaabc;
-  --blue: #006eff;
+  --main-dark-color: #353442;
+  --main-light-color: #FAF7FF;
+  --main-highlight-color: #8685EF;
 }
 
 * {
@@ -15,8 +15,8 @@
   scroll-behavior: smooth;
 }
 
-h1, h2, a, p {
-  color: #fff;
+h1, h2, h3, a, p {
+  color: var(--main-light-color);
 }
 
 a {
@@ -41,7 +41,7 @@ header, header > nav, #about, #projects {
 
 header {
   width: 100%;
-  background-color: var(--blue);
+  background-color: var(--main-highlight-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,10 +62,10 @@ header > nav {
   bottom: 0;
   right: -250px;
   text-align: end;
-  background-color: var(--light-grey);
+  background-color: var(--main-dark-color);
   transition: .3s;
   padding: 1.25em;
-  z-index: 1;
+  z-index: 3;
 }
 
 header > nav > i {
@@ -96,10 +96,9 @@ div.section-secondary-desc-wrapper > p {
   font-size: 1rem;
 }
 
-#home {
+#home, #project-home {
   min-height: 450px;
-  background-color: var(--dark-grey);
-  background: url(/images/laptop.jpg) center center / cover no-repeat;
+  background-color: var(--main-dark-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,7 +106,11 @@ div.section-secondary-desc-wrapper > p {
   padding: 1em;
 }
 
-h1.home-main-heading {
+#home {
+  background: url(/images/laptop.jpg) center center / cover no-repeat;
+}
+
+h1.page-main-heading {
   text-align: center;
 
   font-size: 1.75rem;
@@ -118,7 +121,7 @@ h2.about-main-heading {
 }
 
 p.about-main-desc {
-  background-color: #006eff;
+  background-color: var(--main-highlight-color);
   padding: .1em .5em;
   margin-bottom: .35em;
 }
@@ -146,7 +149,7 @@ ul.projects-wrapper {
 }
 
 li.project, li.project img {
-  border-radius: 15px;
+  border-radius: 1rem;
 }
 
 li.project {
@@ -171,10 +174,102 @@ li.project img:hover {
   transform: scale(1.2);
 }
 
+#project-home {
+  position: relative;
+  padding: 3em;
+}
+
+#project-home::after {
+  content: ' ';
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--main-dark-color);
+  opacity: .6;
+  z-index: 0;
+}
+
+h1.project-main-heading, h2.project-secondary-heading {
+  z-index: 1;
+  text-align: center;
+}
+
+h1.project-main-heading {
+  margin-bottom: .2em;
+}
+
+#project-about {
+  padding: 0 1em;
+}
+
+div.links-wrapper {
+  display: flex;
+}
+
+div.links-wrapper > a {
+  transition: .1s;
+  display: block;
+  border-radius: .5rem;
+  padding: .5em 1em;
+  margin-right: 1em;
+  color: var(--main-highlight-color);
+  line-height: 1;
+  
+  font-weight: 500;
+}
+
+div.links-wrapper > a:hover {
+  color: var(--main-light-color);
+  background-color: var(--main-dark-color);
+}
+
+div.links-wrapper > a > svg {
+  margin-right: .2em;
+}
+
+#project-about p.section-main-desc {
+  margin-bottom: .5em;
+  font-size: 1.2rem;
+}
+
+h2.section-languages-heading {
+  margin-bottom: .5em;
+
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+#project-about ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: .5rem;
+  margin-bottom: .75em;
+}
+
+#project-about ul > li {
+  background-color: var(--main-dark-color);
+  color: var(--main-highlight-color);
+  min-width: 8%;
+  text-align: center;
+  padding: .5em 1em;
+  border-radius: .5rem;
+}
+
+#project-about ul > li > p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 /* Utility */
 
 .heading-shadow {
-  text-shadow: 0px 1px 3px var(--dark-grey);
+  text-shadow: 0px 1px 3px var(--main-dark-color);
 }
 
 /* Media Navbar */
@@ -228,7 +323,7 @@ li.project img:hover {
 /* Media Fonts */
 
 @media (min-width: 450px) {
-  h1.home-main-heading {
+  h1.page-main-heading {
     font-size: 2rem;
     text-transform: uppercase;
   }
@@ -243,7 +338,7 @@ li.project img:hover {
 }
 
 @media (min-width: 700px) {
-  h1.home-main-heading {
+  h1.page-main-heading {
     font-size: 2.5rem;
     text-transform: uppercase;
   }
@@ -258,7 +353,7 @@ li.project img:hover {
 }
 
 @media (min-width: 1000px) {
-  h1.home-main-heading {
+  h1.page-main-heading {
     font-size: 4rem;
   }
 
