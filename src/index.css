@@ -51,7 +51,7 @@ header {
   padding: 1.25em;
 }
 
-h2.logo {
+h2.logo > a {
   font-family: 'Inconsolata', monospace;
   font-weight: 400;
 }
@@ -80,7 +80,7 @@ header > nav > ul > li {
 }
 
 section {
-  margin-bottom: .625em;
+  margin-bottom: 1.5em;
 }
 
 h2.page-secondary-heading {
@@ -89,7 +89,7 @@ h2.page-secondary-heading {
 
 h2.section-main-heading {
   font-size: 1.5rem;
-  margin-bottom: .25em;
+  margin-bottom: .15em;
 }
 
 h3.section-secondary-heading {
@@ -134,7 +134,7 @@ h2.about-main-heading {
 p.about-main-desc {
   background-color: var(--main-highlight-color);
   padding: .1em .5em;
-  margin-bottom: .4168em;
+  margin-bottom: .4em;
 }
 
 div.about-secondary-desc-wrapper {
@@ -154,7 +154,7 @@ h2.projects-main-heading {
 
 ul.projects-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1em;
 }
@@ -216,11 +216,8 @@ h1.project-main-heading {
   padding: 0 1em;
 }
 
-div.section-items-wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: .5rem;
+.section-wrapper-item {
+  margin-bottom: 1em;
 }
 
 div.links-wrapper {
@@ -330,18 +327,6 @@ div.links-wrapper > a > svg {
   
   li.project img {
     height: 380px;
-  }
-}
-
-/* Media ProjectPage */
-
-@media (min-width: 850px) {
-  div.overview-wrapper {
-    width: 80%;
-  }
-  
-  div.languages-wrapper {
-    width: 19%;
   }
 }
 
