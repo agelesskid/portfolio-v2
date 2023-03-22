@@ -5,9 +5,9 @@ import { Link } from "react-router-dom"
 import { nanoid } from "nanoid"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFigma, faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faLightbulb } from "@fortawesome/free-solid-svg-icons"
 import Header from "../Components/Header"
 import Footer from "../Components/Footer"
-import { faCloudBolt, faLightbulb } from "@fortawesome/free-solid-svg-icons"
 
 export default function ProjectPage() {
 
@@ -33,11 +33,11 @@ export default function ProjectPage() {
                             <div className="section-wrapper-item overview-wrapper">
                                 <h3 className="section-overview-heading section-secondary-heading">Project overview:</h3>
                                 <p className="section-main-desc">{full_desc}</p>
-                                <div className="links-wrapper">
-                                    <Link to={github_url}><FontAwesomeIcon icon={faGithub} className="fa-lg"/>GitHub</Link>
-                                    <Link to={live_url}><FontAwesomeIcon icon={faLightbulb} className="fa-lg"/>Live</Link>
-                                    {figma_url && <Link to={figma_url}><FontAwesomeIcon icon={faFigma} className="fa-lg"/>Figma</Link>}
-                                </div>
+                                <ul className="links-wrapper">
+                                    <li><Link to={github_url}><FontAwesomeIcon icon={faGithub} className="fa-lg"/>GitHub</Link></li>
+                                    <li><Link to={live_url}><FontAwesomeIcon icon={faLightbulb} className="fa-lg"/>Live</Link></li>
+                                    {figma_url && <li><Link to={figma_url}><FontAwesomeIcon icon={faFigma} className="fa-lg"/>Figma</Link></li>}
+                                </ul>
                             </div>
                             <div className="section-wrapper-item languages-wrapper">
                                 <h3 className="section-languages-heading section-secondary-heading">Languages:</h3>
