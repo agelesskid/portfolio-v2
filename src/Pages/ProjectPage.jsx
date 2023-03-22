@@ -4,7 +4,7 @@ import { useName } from "../Hooks/useName"
 import { Link } from "react-router-dom"
 import { nanoid } from "nanoid"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faFigma, faGithub } from "@fortawesome/free-brands-svg-icons"
 import Header from "../Components/Header"
 import Footer from "../Components/Footer"
 import { faCloudBolt, faLightbulb } from "@fortawesome/free-solid-svg-icons"
@@ -20,7 +20,7 @@ export default function ProjectPage() {
     useEffect(()=>{
         setProjectObj(projectsArr.find(project=>project.id == projectId))
         if(projectObj){
-            const {gif, name, short_desc, github_url, live_url, full_desc, languages} = projectObj
+            const {gif, name, short_desc, github_url, live_url, figma_url, full_desc, languages} = projectObj
             const languagesEl = languages.map(item=><li key={nanoid()} className="section-list-item"><p>{item}</p></li>)
             setContent(
                 <>
@@ -36,6 +36,7 @@ export default function ProjectPage() {
                                 <div className="links-wrapper">
                                     <Link to={github_url}><FontAwesomeIcon icon={faGithub} className="fa-lg"/>GitHub</Link>
                                     <Link to={live_url}><FontAwesomeIcon icon={faLightbulb} className="fa-lg"/>Live</Link>
+                                    {figma_url && <Link to={figma_url}><FontAwesomeIcon icon={faFigma} className="fa-lg"/>Figma</Link>}
                                 </div>
                             </div>
                             <div className="section-wrapper-item languages-wrapper">
