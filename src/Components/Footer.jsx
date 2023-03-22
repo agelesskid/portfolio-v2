@@ -6,8 +6,8 @@ export default function Footer() {
     return (
         <footer id="contact">
             <div className="footer-item">
-                <h2 className="main-section-heading footer-heading">Sviatoslav "ageless" Kulieshov</h2>
-                <p className="main-section-desc footer-desc">Please reach out if you have any questions! I would gladly jump on a video call to speak with you!</p>
+                <h2 className="footer-heading">Sviatoslav "ageless" Kulieshov</h2>
+                <p className="footer-desc">Please reach out if you have any questions! I would gladly jump on a video call to speak with you!</p>
             </div>
             <ul className="footer-links-list links-wrapper">
                 <li className="footer-links-list-item"><Link to="https://www.linkedin.com/in/sviatoslav-kulieshov-94050026b/"><FontAwesomeIcon icon={faLinkedin} className="fa-2x"/></Link></li>
