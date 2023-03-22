@@ -30,7 +30,7 @@ export default function ProjectPage() {
                     </section>
                     <section id="project-about">
                         <div className="section-items-wrapper">
-                            <div className="section-item overview-wrapper">
+                            <div className="section-wrapper-item overview-wrapper">
                                 <h3 className="section-overview-heading section-secondary-heading">Project overview:</h3>
                                 <p className="section-main-desc">{full_desc}</p>
                                 <div className="links-wrapper">
@@ -38,7 +38,7 @@ export default function ProjectPage() {
                                     <Link to={live_url}><FontAwesomeIcon icon={faLightbulb} className="fa-lg"/>Live</Link>
                                 </div>
                             </div>
-                            <div className="section-item languages-wrapper">
+                            <div className="section-wrapper-item languages-wrapper">
                                 <h3 className="section-languages-heading section-secondary-heading">Languages:</h3>
                                 <ul className="section-languages-list">
                                     {languagesEl}

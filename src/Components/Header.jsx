@@ -23,22 +23,14 @@ export default function Header() {
     }
 
     const navBarList = (
-        location.pathname === '/'
-            ? (
-                <ul>
-                    <li><Link to="/#home" className="nav-link" onClick={windowWidth < 700 ? closeNav : undefined}>Home</Link></li>
-                    <li><Link to="/#about" className="nav-link" onClick={windowWidth < 700 ? closeNav : undefined}>About</Link></li>
-                    <li><Link to="/#projects" className="nav-link" onClick={windowWidth < 700 ? closeNav : undefined}>Projects</Link></li>
-                    <li><Link to="/#contact" className="nav-link" onClick={windowWidth < 700 ? closeNav : undefined}>Contact</Link></li>
-                    <li><Link to="https://u24.gov.ua/">Support Ukraine</Link></li>
-                </ul>
-            ) 
-            : (
-                <ul>
-                    <li><Link to="/" className="nav-link" onClick={windowWidth < 700 ? closeNav : undefined}>Home</Link></li>
-                    <li><Link to="https://u24.gov.ua/">Support Ukraine</Link></li>
-                </ul>
-            )
+        location.pathname === '/' && (
+            <ul>
+                <li><Link to="/#about" className="nav-link" onClick={windowWidth < 700 ? closeNav : undefined}>About</Link></li>
+                <li><Link to="/#projects" className="nav-link" onClick={windowWidth < 700 ? closeNav : undefined}>Projects</Link></li>
+                <li><Link to="/#contact" className="nav-link" onClick={windowWidth < 700 ? closeNav : undefined}>Contact</Link></li>
+                <li><Link to="https://u24.gov.ua/">Support Ukraine</Link></li>
+            </ul>
+        ) 
     )
 
     const navBar = (
@@ -50,9 +42,9 @@ export default function Header() {
 
     return (
         <header>
-            <h2 className="logo">{"<Ageless />"}</h2>
-            {windowWidth < 700 && <FontAwesomeIcon icon={faBars} className="fa-2x fa-inverse" onClick={openNav}/>}
-            {navBar}
+            <h2 className="logo"><Link to="/" className="logo">{"<Ageless />"}</Link></h2>
+            {location.pathname === '/' && windowWidth < 700 && <FontAwesomeIcon icon={faBars} className="fa-2x fa-inverse" onClick={openNav}/>}
+            {location.pathname === '/' && navBar}
         </header>
     )
 }
